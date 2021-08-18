@@ -47,18 +47,14 @@ async function getBlockHeight() {
 //main functionality
 const submitButton = document.querySelector("#button");
 const blockHeightInput = document.querySelector("#blockheight");
-const currentBlockHeight = getBlockHeight();
 
 submitButton.onclick = async function handleOnClick() {
   const blockHeight = blockHeightInput.value;
+  const currentBlockHeight = await getBlockHeight();
 
   if (blockHeight <= currentBlockHeight && blockHeight > 0) {
-    const blockInfo = async () => {
-      const apiResult = await getBlockInfo(blockHeight);
-      return apiResult.time;
-    };
-    const blockInfoResult = await blockInfo();
-    const blockDate = new Date(blockInfoResult);
+    const blockInfoResult = await getBlockInfo(blockHeight);
+    const blockDate = new Date(blockInfoResult.time);
     document.querySelector("#blockdate").innerHTML = blockDate;
   }
 
@@ -69,7 +65,7 @@ submitButton.onclick = async function handleOnClick() {
     const currentTime = Date.now();
     const futureTime = currentTime + msInFuture;
     const futureTimeFormatted = new Date(futureTime);
-    document.querySelector('#blockdate').innerHTML = '~' + '' + futureTimeFormatted;
+    document.querySelector('#blockdate').innerHTML = '~' + ' ' + futureTimeFormatted;
   }
 
   else {
