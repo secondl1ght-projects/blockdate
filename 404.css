@@ -1,0 +1,24 @@
+/*style for the 404 page*/
+html {
+  background-image: url(./images/background.jpg);
+  }
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'Alegreya', Serif;
+  color: antiquewhite;
+}
+
+body {
+  border: 2px solid antiquewhite;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 200px;
+}
+
+a {
+  color: antiquewhite;
+}
+
+a:hover {
+  text-decoration: none;
+}
