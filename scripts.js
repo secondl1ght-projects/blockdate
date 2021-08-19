@@ -67,6 +67,7 @@ submitButton.onclick = async function handleOnClick() {
     const blockInfoResult = await getBlockInfo(blockHeight);
     const blockDate = new Date(blockInfoResult.time);
     document.querySelector('#button').innerHTML = 'GENERATE DATE';
+    document.querySelector('#easteregg').innerHTML = '';
     document.querySelector("#blockdate").innerHTML = blockDate;
     submitButton.disabled = false;
   }
@@ -79,6 +80,7 @@ submitButton.onclick = async function handleOnClick() {
     const futureTime = currentTime + msInFuture;
     const futureTimeFormatted = new Date(futureTime);
     document.querySelector('#button').innerHTML = 'GENERATE DATE';
+    document.querySelector('#easteregg').innerHTML = '';
     document.querySelector('#blockdate').innerHTML = '~' + ' ' + futureTimeFormatted;
     submitButton.disabled = false;
   }
@@ -93,6 +95,7 @@ submitButton.onclick = async function handleOnClick() {
 
   else {
     document.querySelector('#button').innerHTML = 'GENERATE DATE';
+    document.querySelector('#easteregg').innerHTML = '';
     document.querySelector('#blockdate').innerHTML = 'Block height must not be a negative number.';
     submitButton.disabled = false;
   }
