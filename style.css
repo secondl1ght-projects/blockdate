@@ -28,13 +28,17 @@ h3, label, h4, h5, li, span {
 }
 
 #hintlink:hover {
-  border: 1px dashed white;
+  border: 1px solid white;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 2%;
 }
 
 #git:hover {
   color: black;
+}
+
+#btc:hover {
+  text-decoration: underline;
 }
 
 /*button*/
@@ -89,7 +93,8 @@ input:out-of-range {
 }
 
 #footeranchor {
-  height: 95vh;
+  height: 100vh;
+  margin-bottom: 5rem;
 }
 
 footer {
@@ -98,7 +103,7 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   border-radius: 0.5%;
 }
 
@@ -116,9 +121,21 @@ li {
   display: none;
 }
 
+#easteregg {
+  font-family: 'Bree Serif', Serif;
+  text-align: center;
+  color: #F7931A;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+#highlight {
+  color: #F7931A;
+}
+
 /*media queries*/
 @media only screen and (max-width: 770px) {
   #footeranchor {
-    margin-bottom: 15rem;
+    margin-bottom: 30rem;
   }
 }

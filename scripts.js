@@ -87,6 +87,7 @@ submitButton.onclick = async function handleOnClick() {
   const genesisBlock = new Date('2009-01-03 18:15:05 utc');
     document.querySelector('#button').innerHTML = 'GENERATE DATE';
     document.querySelector("#blockdate").innerHTML = genesisBlock;
+    document.querySelector('#easteregg').innerHTML = 'This is the first block in the bitcoin blockchain, known as the Genesis Block. This block was mined by Satoshi Nakamoto.';
     submitButton.disabled = false;
   }
 
