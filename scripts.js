@@ -63,7 +63,15 @@ submitButton.onclick = async function handleOnClick() {
   const blockHeight = blockHeightInput.value;
   const currentBlockHeight = await getBlockHeight();
 
-  if (blockHeight == 170) {
+  if (blockHeight == 0) {
+  const genesisBlock = new Date('2009-01-03 18:15:05 utc');
+    document.querySelector('#button').innerHTML = 'GENERATE DATE';
+    document.querySelector("#blockdate").innerHTML = genesisBlock;
+    document.querySelector('#easteregg').innerHTML = 'This is the first block in the bitcoin blockchain, known as the <a href="https://en.bitcoin.it/wiki/Genesis_block" target="_blank" rel="noreferrer">Genesis Block</a>. This block was mined by <a href="https://www.satoshi.nakamotoinstitute.org" target="_blank" rel="noreferrer">Satoshi Nakamoto</a>.<br><br><a href="https://en.bitcoin.it/w/images/en/1/1d/Jonny1000thetimes.png" target="_blank" rel="noreferrer">The Times 03/Jan/2009 Chancellor on brink of second bailout for banks</a>';
+    submitButton.disabled = false;
+  }
+
+  else if (blockHeight == 170) {
     const timestamp = new Date('2009-01-12 03:30:25 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
@@ -175,14 +183,6 @@ submitButton.onclick = async function handleOnClick() {
     document.querySelector('#button').innerHTML = 'GENERATE DATE';
     document.querySelector('#easteregg').innerHTML = '';
     document.querySelector('#blockdate').innerHTML = '~' + ' ' + futureTimeFormatted;
-    submitButton.disabled = false;
-  }
-
-  else if (blockHeight == 0) {
-  const genesisBlock = new Date('2009-01-03 18:15:05 utc');
-    document.querySelector('#button').innerHTML = 'GENERATE DATE';
-    document.querySelector("#blockdate").innerHTML = genesisBlock;
-    document.querySelector('#easteregg').innerHTML = 'This is the first block in the bitcoin blockchain, known as the <a href="https://en.bitcoin.it/wiki/Genesis_block" target="_blank" rel="noreferrer">Genesis Block</a>. This block was mined by <a href="https://www.satoshi.nakamotoinstitute.org" target="_blank" rel="noreferrer">Satoshi Nakamoto</a>.<br><br><a href="https://en.bitcoin.it/w/images/en/1/1d/Jonny1000thetimes.png" target="_blank" rel="noreferrer">The Times 03/Jan/2009 Chancellor on brink of second bailout for banks</a>';
     submitButton.disabled = false;
   }
 
