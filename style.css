@@ -158,4 +158,13 @@ li {
   #btc {
     text-decoration: underline;
   }
+
+  ul {
+    display: inline;
+  }
+
+  li {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
