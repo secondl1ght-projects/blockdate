@@ -4,13 +4,13 @@ html {
   min-height: 100%;
 }
 
-h1, input, #blockdate {
+h1, input, #blockdate, li {
   font-family: 'Bree Serif', Serif;
   color: antiquewhite;
   text-align: center;
 }
 
-h3, label, h4, h5, li, span {
+h3, label, h4, h5, span {
   font-family: 'Alegreya', Serif;
   color: antiquewhite;
   text-align: center;
@@ -92,7 +92,7 @@ input:out-of-range {
 
 #footeranchor {
   height: 100vh;
-  margin-bottom: 10rem;
+  margin-bottom: 10%;
 }
 
 footer {
@@ -114,7 +114,7 @@ ul {
 li {
   margin: 1rem;
   border: 1px solid antiquewhite;
-  padding: 0 0.25rem;
+  padding: 0.05rem 0.25rem 0.25rem 0.25rem;
   background-color: rgba(210, 208, 208, 0.1);
 }
 
@@ -151,7 +151,7 @@ li {
 /*media queries*/
 @media only screen and (max-width: 770px) {
   #footeranchor {
-    margin-bottom: 20rem;
+    margin-bottom: 20%;
   }
 
   h1 {
