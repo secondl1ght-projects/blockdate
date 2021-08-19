@@ -148,7 +148,7 @@ li {
 /*media queries*/
 @media only screen and (max-width: 770px) {
   #footeranchor {
-    height: 80vh;
+    height: 82.5vh;
   }
 
   h1 {
