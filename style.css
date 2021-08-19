@@ -45,7 +45,6 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid antiquewhite;
   padding: 0.5rem;
-  border-radius: 4%;
   color: antiquewhite;
   font-size: 1rem;
 }
@@ -60,7 +59,6 @@ input {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5rem;
   border: 2px solid antiquewhite;
-  border-radius: 4%;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -102,7 +100,6 @@ footer {
   left: 0;
   bottom: 0;
   position: fixed;
-  border-radius: 0.5%;
 }
 
 ul {
