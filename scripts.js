@@ -139,7 +139,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2020-05-11 19:23:23 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = 'With the coinbase message `Times 09/Apr/2020 With $2.3T Injection, Fed`s Plan Far Exceeds 2008 Rescue`, this block echoes the spiritual call-to-action of Satoshi`s genesis block.';
+      document.querySelector('#easteregg').innerHTML = 'The coinbase message in this block reads `Times 09/Apr/2020 With $2.3T Injection, Fed`s Plan Far Exceeds 2008 Rescue`, echoing the spiritual call-to-action of Satoshi`s genesis block.';
       submitButton.disabled = false;
   }
 
