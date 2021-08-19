@@ -91,7 +91,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2010-05-22 18:16:31 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = '<i class="fas fa-pizza-slice"></i><br>This is the famous `Bitcoin Pizza` transaction, one of the earliest `real-world` transactions, in which 10,000 BTC was paid for 2 large pizzas worth ~41 USD (at an effective exchange rate of ~$0.04/BTC).<br><br><a href="https://bitcointalk.org/index.php?topic=137.0" target="_blank" rel="noreferrer">bitcointalk.org thread</a>';
+      document.querySelector('#easteregg').innerHTML = '<i class="fas fa-pizza-slice"></i><br>This is the famous Bitcoin Pizza transaction, one of the earliest real-world transactions, in which 10,000 BTC was paid for 2 large pizzas worth ~41 USD (at an effective exchange rate of ~$0.04/BTC).<br><br><a href="https://bitcointalk.org/index.php?topic=137.0" target="_blank" rel="noreferrer">bitcointalk.org thread</a>';
       submitButton.disabled = false;
   }
 
@@ -139,7 +139,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2020-05-11 19:23:23 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = 'With the coinbase message `Times 09/Apr/2020 With $2.3T Injection, Fed`s Plan Far Exceeds 2008 Rescue`, this final block of subsidy era #3 (12.5 BTC) echoes the spiritual call-to-action of Satoshi`s genesis block.';
+      document.querySelector('#easteregg').innerHTML = 'With the coinbase message `Times 09/Apr/2020 With $2.3T Injection, Fed`s Plan Far Exceeds 2008 Rescue`, this block echoes the spiritual call-to-action of Satoshi`s genesis block.';
       submitButton.disabled = false;
   }
 
