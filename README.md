@@ -51,6 +51,7 @@ Deployed
 ## Room for Improvement
 
 -   Add more easter eggs.
+-   Add enter key functionality for searches.
 
 ## Acknowledgements
 
@@ -61,7 +62,7 @@ Deployed
 -   API data provided by blockcypher.com
 -   Easter eggs created with help from https://github.com/janoside/btc-rpc-explorer
 -   Background image Photo by <a href="https://unsplash.com/@fabioha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">fabio</a> on <a href="https://unsplash.com/s/photos/bitcoin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
 ## Contact
 
 If you would like to contact me please send me a message on Discord @secondl1ght#9164 or by e-mail at secondl1ght@protonmail.com, I would love to hear from you!
