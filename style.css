@@ -28,9 +28,7 @@ h3, label, h4, h5, li, span {
 }
 
 #hintlink:hover {
-  border: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
+  text-decoration: underline;
 }
 
 #git:hover {
@@ -115,6 +113,9 @@ ul {
 
 li {
   margin: 1rem;
+  border: 1px solid antiquewhite;
+  padding: 0 0.25rem;
+  background-color: rgba(210, 208, 208, 0.1);
 }
 
 #hints {
