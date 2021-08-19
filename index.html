@@ -5,23 +5,56 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A bitcoin block date calculator.">
+  <link rel='icon' href="./favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya|Bree+Serif" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ccca4580d7.js" crossorigin="anonymous"></script>
   <title>blockdate.computer</title>
 </head>
 
 <body>
-  <header>
-    <h1>BLOCKDATE.COMPUTER</h1>
-  </header>
-  <main>
-    <div id="blockdate">
+  <div id='footeranchor'>
+    <header>
+      <h1><span id='block'>B L O C K</span> D A T E . C O M P U T E R</h1>
+      <h3 id='current'></h3>
+    </header>
+    <main>
+      <div id='hero'>
+        <div id="blockdate">
 
-    </div>
-    <input type="number" name="blockheight" min='1' id='blockheight' placeholder="629999"><br>
-    <label for="blockheight">Enter a bitcoin block height in the past, present or future...</label><br>
-    <button type="button" name="button" id='button'>Submit</button>
-  </main>
+        </div>
+        <div id='input'>
+          <input type="number" name="blockheight" min='0' id='blockheight' placeholder="629999">
+        </div>
+        <div id='label'><label for="blockheight">Enter a bitcoin block height in the past, present or future.</label></div>
+        <br>
+        <div id='buttonselect'><button type="button" name="button" id='button'>GENERATE DATE</button></div>
+      </div>
+      <h4>Some blocks are special, see if you can find some...</h4>
+      <h5><a href="#" id='hintlink'>*HINTS*</a></h5>
+      <div id="hints">
+        <ul>
+          <li>0</li>
+          <li>170</li>
+          <li>24835</li>
+          <li>57043</li>
+          <li>153509</li>
+          <li>210000</li>
+          <li>230009</li>
+          <li>420000</li>
+          <li>621259</li>
+          <li>629999</li>
+          <li>630000</li>
+        </ul>
+        <h5>Have a suggestion? Let me know on Discord @secondl1ght#9164.</h5>
+      </div>
+    </main>
+  </div>
   <footer>
-
+    <div id='foot'>
+      <span><i class="far fa-copyright"></i> SECONDL1GHT 2021</span>
+      <span><i class="fas fa-code"></i> with <i class="fas fa-heartbeat"></i> by <a href="https://www.github.com/secondl1ght" target='_blank' rel='noreferrer'><i id='git' class="fab fa-github"></i></a></span>
+    </div>
   </footer>
   <script src='./scripts.js'></script>
 </body>

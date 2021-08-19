@@ -44,18 +44,31 @@ async function getBlockHeight() {
   });
 }
 
+//h2 information
+async function currentHeightInterval() {
+  let height = await getBlockHeight();
+  return document.querySelector('#current').innerHTML = 'CURRENT BLOCK HEIGHT: ' + height;
+}
+currentHeightInterval();
+//let heightInterval = setInterval(currentHeightInterval(), 60000);
+
 //main functionality
 const submitButton = document.querySelector("#button");
 const blockHeightInput = document.querySelector("#blockheight");
 
 submitButton.onclick = async function handleOnClick() {
+  submitButton.disabled = true;
+  document.querySelector('#button').innerHTML = 'LOADING';
+  await currentHeightInterval();
   const blockHeight = blockHeightInput.value;
   const currentBlockHeight = await getBlockHeight();
 
   if (blockHeight <= currentBlockHeight && blockHeight > 0) {
     const blockInfoResult = await getBlockInfo(blockHeight);
     const blockDate = new Date(blockInfoResult.time);
+    document.querySelector('#button').innerHTML = 'GENERATE DATE';
     document.querySelector("#blockdate").innerHTML = blockDate;
+    submitButton.disabled = false;
   }
 
   else if (blockHeight > currentBlockHeight) {
@@ -65,10 +78,33 @@ submitButton.onclick = async function handleOnClick() {
     const currentTime = Date.now();
     const futureTime = currentTime + msInFuture;
     const futureTimeFormatted = new Date(futureTime);
+    document.querySelector('#button').innerHTML = 'GENERATE DATE';
     document.querySelector('#blockdate').innerHTML = '~' + ' ' + futureTimeFormatted;
+    submitButton.disabled = false;
+  }
+
+  else if (blockHeight == 0) {
+  const genesisBlock = new Date('2009-01-03 18:15:05 utc');
+    document.querySelector('#button').innerHTML = 'GENERATE DATE';
+    document.querySelector("#blockdate").innerHTML = genesisBlock;
+    submitButton.disabled = false;
   }
 
   else {
-    document.querySelector('#blockdate').innerHTML = 'Block height must be greater than zero.';
+    document.querySelector('#button').innerHTML = 'GENERATE DATE';
+    document.querySelector('#blockdate').innerHTML = 'Block height must not be a negative number.';
+    submitButton.disabled = false;
+  }
+};
+
+//HINTS
+const hintLink = document.querySelector('#hintlink');
+const hints = document.querySelector('#hints');
+hintLink.onclick = function hintClick() {
+  if (hints.style.display === 'none' || hints.style.display === '') {
+    hints.style.display = 'block'
+  }
+  else {
+    hints.style.display = 'none'
   }
 };
