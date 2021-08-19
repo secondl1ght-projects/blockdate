@@ -148,7 +148,7 @@ li {
 /*media queries*/
 @media only screen and (max-width: 770px) {
   #footeranchor {
-    height: 80vh;
+    height: 75vh;
   }
 
   h1 {
@@ -166,9 +166,5 @@ li {
   li {
     width: 50%;
     margin: 0 auto;
-  }
-
-  footer {
-    font-size: 75%;
   }
 }
