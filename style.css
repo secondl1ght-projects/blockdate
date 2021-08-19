@@ -94,7 +94,7 @@ input:out-of-range {
 
 #footeranchor {
   height: 100vh;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 footer {
@@ -129,12 +129,22 @@ li {
   margin-bottom: 2rem;
 }
 
+#easteregg a {
+  color: #F7931A;
+  text-decoration: underline;
+}
+
+#easteregg a:hover {
+  text-decoration: none;
+}
+
 #highlight {
   color: #F7931A;
 }
 
 #btcicon {
   font-size: 4rem;
+  color: #F7931A;
 }
 
 /*media queries*/
