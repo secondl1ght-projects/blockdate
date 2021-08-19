@@ -90,7 +90,7 @@ input:out-of-range {
 
 #footeranchor {
   height: 100vh;
-  margin-bottom: 10%;
+  margin-bottom: 10rem;
 }
 
 footer {
@@ -148,7 +148,7 @@ li {
 /*media queries*/
 @media only screen and (max-width: 770px) {
   #footeranchor {
-    margin-bottom: 20%;
+    margin-bottom: 20rem;
   }
 
   h1 {
