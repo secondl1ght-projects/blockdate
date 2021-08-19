@@ -136,6 +136,9 @@ li {
 /*media queries*/
 @media only screen and (max-width: 770px) {
   #footeranchor {
-    margin-bottom: 30rem;
+    margin-bottom: 20rem;
+  }
+  h1 {
+    font-size: 90%;
   }
 }
