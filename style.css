@@ -106,6 +106,12 @@ ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  list-style-type: none;
+}
+
+ul i {
+  align-self: center;
+  color: antiquewhite;
 }
 
 li {
@@ -161,6 +167,12 @@ li {
 
   ul {
     display: inline;
+  }
+
+  #hints i {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
   }
 
   li {
