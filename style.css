@@ -179,4 +179,8 @@ li {
     width: 50%;
     margin: 0 auto;
   }
+
+  html {
+    background-size: 225%
+  }
 }
