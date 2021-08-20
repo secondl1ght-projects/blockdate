@@ -147,7 +147,7 @@ li {
 }
 
 #btcicon {
-  font-size: 5rem;
+  font-size: 6rem;
   color: #F7931A;
 }
 
@@ -167,6 +167,10 @@ li {
 
   ul {
     display: inline;
+  }
+
+  #hints h5 {
+    margin-top: 2.5rem;
   }
 
   #hints i {
