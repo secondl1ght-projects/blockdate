@@ -55,6 +55,7 @@ currentHeightInterval();
 //main functionality
 const submitButton = document.querySelector("#button");
 const blockHeightInput = document.querySelector("#blockheight");
+blockHeightInput.focus();
 
 submitButton.onclick = async function handleOnClick() {
   submitButton.disabled = true;
