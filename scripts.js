@@ -100,7 +100,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2011-11-16 05:59:08 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = 'This block confirms a transaction from November 2011 spends 11 UTXOs worth 50,000 BTC each to create a single 550,000 BTC UTXO. This is currently the largest output transaction.<br><br><a href="https://mempool.space/tx/29a3efd3ef04f9153d47a990bd7b048a4b2d213daaa5fb8ed670fb85f13bdbcf" target="_blank" rel="noreferrer">View transaction</a>';
+      document.querySelector('#easteregg').innerHTML = 'This block confirms a transaction from November 2011 that spends 11 UTXOs worth 50,000 BTC each to create a single 550,000 BTC UTXO. This is currently the largest output transaction.<br><br><a href="https://mempool.space/tx/29a3efd3ef04f9153d47a990bd7b048a4b2d213daaa5fb8ed670fb85f13bdbcf" target="_blank" rel="noreferrer">View transaction</a>';
       submitButton.disabled = false;
   }
 
