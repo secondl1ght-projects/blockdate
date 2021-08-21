@@ -44,13 +44,42 @@ async function getBlockHeight() {
   });
 }
 
-//h2 information
+//get current btc price from coindesk
+async function getBTCPrice() {
+  return new Promise(async (resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+
+    const url = `https://api.coindesk.com/v1/bpi/currentprice.json`;
+
+    xhr.responseType = "json";
+
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        resolve(xhr.response.bpi.USD.rate_float);
+      } else {
+        return "Trouble reaching the Coindesk API.";
+      }
+    };
+
+    xhr.open("GET", url);
+
+    xhr.send();
+  });
+}
+
+//h3 information
 async function currentHeightInterval() {
   let height = await getBlockHeight();
   return document.querySelector('#current').innerHTML = 'CURRENT BLOCK HEIGHT: ' + height;
 }
 currentHeightInterval();
 //let heightInterval = setInterval(currentHeightInterval(), 60000);
+
+async function currentBTCPrice() {
+  let price = await getBTCPrice();
+  return document.querySelector('#btcprice').innerHTML = '$' + Math.round(price) + ' (USD)';
+}
+currentBTCPrice();
 
 //main functionality
 const submitButton = document.querySelector("#button");
@@ -61,6 +90,7 @@ submitButton.onclick = async function handleOnClick() {
   submitButton.disabled = true;
   document.querySelector('#button').innerHTML = 'LOADING';
   await currentHeightInterval();
+  await currentBTCPrice();
   const blockHeight = blockHeightInput.value;
   const currentBlockHeight = await getBlockHeight();
 
