@@ -26,15 +26,15 @@ async function getBlockHeight() {
   return new Promise(async (resolve, reject) => {
     const xhr = new XMLHttpRequest();
 
-    const url = `https://api.blockcypher.com/v1/btc/main`;
+    const url = `https://mempool.space/api/blocks/tip/height`;
 
     xhr.responseType = "json";
 
     xhr.onreadystatechange = () => {
       if (xhr.readyState === XMLHttpRequest.DONE) {
-        resolve(xhr.response.height);
+        resolve(xhr.response);
       } else {
-        return "Trouble reaching the Blockcypher API.";
+        return "Trouble reaching the Mempool.space API.";
       }
     };
 
@@ -227,7 +227,7 @@ submitButton.onclick = async function handleOnClick() {
   else {
     document.querySelector('#button').innerHTML = 'GENERATE DATE';
     document.querySelector('#easteregg').innerHTML = '';
-    document.querySelector('#blockdate').innerHTML = 'Trouble reaching the Blockcypher API, please try again later.';
+    document.querySelector('#blockdate').innerHTML = 'Trouble reaching API, please try again later.';
     submitButton.disabled = false;
   }
 };
