@@ -39,7 +39,7 @@ h3, label, h4, span, h5 {
   text-decoration: underline;
 }
 
-#hintlink {
+#hintlink, #search {
   color: #F7931A;
 }
 
