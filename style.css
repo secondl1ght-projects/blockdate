@@ -4,13 +4,13 @@ html {
   min-height: 100%;
 }
 
-h1, input, #blockdate, li, h5 {
+h1, input, #blockdate, li {
   font-family: 'Bree Serif', Serif;
   color: antiquewhite;
   text-align: center;
 }
 
-h3, label, h4, span {
+h3, label, h4, span, h5 {
   font-family: 'Alegreya', Serif;
   color: antiquewhite;
   text-align: center;
@@ -37,6 +37,10 @@ h3, label, h4, span {
 
 #btc:hover {
   text-decoration: underline;
+}
+
+#hintlink {
+  color: #F7931A;
 }
 
 /*button*/
