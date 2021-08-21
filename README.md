@@ -59,7 +59,7 @@ Deployed
 -   Icons by (<https://www.fontawesome.com>)
 -   Coded using Atom text editor
 -   Special thanks to <https://github.com/alejandro> for reviewing my code and helping me refactor parts of it, also helping with debugging and overall being awesome!
--   API data provided by blockcypher.com
+-   API data provided by blockcypher.com, mempool.space and coindesk.com
 -   Easter eggs created with help from https://github.com/janoside/btc-rpc-explorer
 -   Background image Photo by <a href="https://unsplash.com/@fabioha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">fabio</a> on <a href="https://unsplash.com/s/photos/bitcoin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
