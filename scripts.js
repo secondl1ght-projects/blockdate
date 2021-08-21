@@ -77,7 +77,7 @@ currentHeightInterval();
 
 async function currentBTCPrice() {
   let price = await getBTCPrice();
-  return document.querySelector('#btcprice').innerHTML = '$' + Math.round(price) + ' (USD)';
+  return document.querySelector('#btcprice').innerHTML = '$' + Math.round(price) + ' <span id="unit">(USD)</span>';
 }
 currentBTCPrice();
 

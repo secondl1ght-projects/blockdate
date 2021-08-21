@@ -4,13 +4,13 @@ html {
   min-height: 100%;
 }
 
-h1, input, #blockdate, li {
+h1, input, #blockdate, li, h5 {
   font-family: 'Bree Serif', Serif;
   color: antiquewhite;
   text-align: center;
 }
 
-h3, label, h4, h5, span {
+h3, label, h4, span {
   font-family: 'Alegreya', Serif;
   color: antiquewhite;
   text-align: center;
@@ -152,6 +152,11 @@ li {
 }
 
 #btcprice {
+  color: #F7931A;
+}
+
+#unit {
+  font-size: 0.75rem;
   color: #F7931A;
 }
 
