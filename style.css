@@ -155,13 +155,17 @@ li {
   color: #F7931A;
 }
 
-#btcprice {
+#btcprice, #pricefont {
   color: #F7931A;
 }
 
 #unit {
   font-size: 0.75rem;
   color: #F7931A;
+}
+
+#bh-top, #pricefont {
+  font-family: 'Bree Serif', Serif;
 }
 
 /*media queries*/

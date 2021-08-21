@@ -70,14 +70,16 @@ async function getBTCPrice() {
 //h3 information
 async function currentHeightInterval() {
   let height = await getBlockHeight();
-  return document.querySelector('#current').innerHTML = 'CURRENT BLOCK HEIGHT: ' + height;
+  return document.querySelector('#current').innerHTML = 'CURRENT BLOCK HEIGHT: ' + '<span id="bh-top">' + height + '</span>';
 }
 currentHeightInterval();
 //let heightInterval = setInterval(currentHeightInterval(), 60000);
 
 async function currentBTCPrice() {
   let price = await getBTCPrice();
-  return document.querySelector('#btcprice').innerHTML = '$' + Math.round(price) + ' <span id="unit">(USD)</span>';
+  const options = { style: 'currency', currency: 'USD' };
+  const numberFormat = new Intl.NumberFormat('en-US', options);
+  return document.querySelector('#btcprice').innerHTML = '<span id="pricefont">' + numberFormat.format(price) + '</span>' +  ' <span id="unit">(USD)</span>';
 }
 currentBTCPrice();
 
