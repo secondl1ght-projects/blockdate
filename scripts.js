@@ -76,7 +76,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2009-01-12 03:30:25 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = 'This block contains a transaction that represents the first ever transfer of bitcoin from one person to another. It also has the added distinction of being (one of?) the only known transfers of bitcoin from Satoshi Nakamoto, in this case sending bitcoin to <a href="https://bitcoincoaster.com/news/running-bitcoin-sculpture/" target="_blank" rel="noreferrer">Hal Finney</a> as a test.';
+      document.querySelector('#easteregg').innerHTML = 'This block contains the transaction that represents the first ever transfer of bitcoin from one person to another. It also has the added distinction of being (one of?) the only known transfers of bitcoin from Satoshi Nakamoto, in this case sending bitcoin to <a href="https://bitcoincoaster.com/news/running-bitcoin-sculpture/" target="_blank" rel="noreferrer">Hal Finney</a> as a test.';
       submitButton.disabled = false;
   }
 
