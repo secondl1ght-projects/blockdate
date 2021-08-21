@@ -76,7 +76,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2009-01-12 03:30:25 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = 'This transaction represents the first ever transfer of bitcoin from one person to another. It also has the added distinction of being (one of?) the only known transfers of bitcoin from Satoshi Nakamoto, in this case sending bitcoin to <a href="https://bitcoincoaster.com/news/running-bitcoin-sculpture/" target="_blank" rel="noreferrer">Hal Finney</a> as a test.';
+      document.querySelector('#easteregg').innerHTML = 'This block contains a transaction that represents the first ever transfer of bitcoin from one person to another. It also has the added distinction of being (one of?) the only known transfers of bitcoin from Satoshi Nakamoto, in this case sending bitcoin to <a href="https://bitcoincoaster.com/news/running-bitcoin-sculpture/" target="_blank" rel="noreferrer">Hal Finney</a> as a test.';
       submitButton.disabled = false;
   }
 
@@ -84,7 +84,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2009-10-12 04:21:18 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = 'In this first-known BTC-to-fiat transaction, 5,050 BTC were exchanged for 5.02 USD, at an effective exchange rate of ~0.001 USD/BTC.<br><br><a href="https://nitter.pussthecat.org/marttimalmi/status/423455561703624704" target="_blank" rel="noreferrer">Twitter thread</a>';
+      document.querySelector('#easteregg').innerHTML = 'In this block there is the first-known BTC-to-fiat transaction, 5,050 BTC were exchanged for 5.02 USD, at an effective exchange rate of ~0.001 USD/BTC.<br><br><a href="https://nitter.pussthecat.org/marttimalmi/status/423455561703624704" target="_blank" rel="noreferrer">Twitter thread</a>';
       submitButton.disabled = false;
   }
 
@@ -92,7 +92,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2010-05-22 18:16:31 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = '<i class="fas fa-pizza-slice"></i><br>This is the famous Bitcoin Pizza transaction, one of the earliest real-world transactions, in which 10,000 BTC was paid for 2 large pizzas worth ~41 USD (at an effective exchange rate of ~$0.04/BTC).<br><br><a href="https://bitcointalk.org/index.php?topic=137.0" target="_blank" rel="noreferrer">bitcointalk.org thread</a>';
+      document.querySelector('#easteregg').innerHTML = '<i class="fas fa-pizza-slice"></i><br>57043 has the famous Bitcoin Pizza transaction, one of the earliest real-world transactions, in which 10,000 BTC was paid for 2 large pizzas worth ~41 USD (at an effective exchange rate of ~$0.04/BTC).<br><br><a href="https://bitcointalk.org/index.php?topic=137.0" target="_blank" rel="noreferrer">bitcointalk.org thread</a>';
       submitButton.disabled = false;
   }
 
@@ -100,7 +100,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2011-11-16 05:59:08 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = 'This transaction from November 2011 spends 11 UTXOs worth 50,000 BTC each to create a single 550,000 BTC UTXO. This is currently the largest output transaction.<br><br><a href="https://mempool.space/tx/29a3efd3ef04f9153d47a990bd7b048a4b2d213daaa5fb8ed670fb85f13bdbcf" target="_blank" rel="noreferrer">View transaction</a>';
+      document.querySelector('#easteregg').innerHTML = 'This block confirms a transaction from November 2011 spends 11 UTXOs worth 50,000 BTC each to create a single 550,000 BTC UTXO. This is currently the largest output transaction.<br><br><a href="https://mempool.space/tx/29a3efd3ef04f9153d47a990bd7b048a4b2d213daaa5fb8ed670fb85f13bdbcf" target="_blank" rel="noreferrer">View transaction</a>';
       submitButton.disabled = false;
   }
 
@@ -116,7 +116,7 @@ submitButton.onclick = async function handleOnClick() {
     const timestamp = new Date('2013-04-06 20:28:10 utc');
       document.querySelector('#button').innerHTML = 'GENERATE DATE';
       document.querySelector("#blockdate").innerHTML = timestamp;
-      document.querySelector('#easteregg').innerHTML = 'This transaction encodes the Bitcoin whitepaper PDF in 945 of its 947 outputs. Read the whitepaper <a href="https://bitcoin.org/en/bitcoin-paper" target="_blank" rel="noreferrer">here</a>.';
+      document.querySelector('#easteregg').innerHTML = 'This block includes a transaction that encodes the Bitcoin whitepaper PDF in 945 of its 947 outputs. Read the whitepaper <a href="https://bitcoin.org/en/bitcoin-paper" target="_blank" rel="noreferrer">here</a>.';
       submitButton.disabled = false;
   }
 
