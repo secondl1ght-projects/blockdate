@@ -187,10 +187,17 @@ submitButton.onclick = async function handleOnClick() {
     submitButton.disabled = false;
   }
 
-  else {
+  else if (blockHeight < 0) {
     document.querySelector('#button').innerHTML = 'GENERATE DATE';
     document.querySelector('#easteregg').innerHTML = '';
     document.querySelector('#blockdate').innerHTML = 'Block height must not be a negative number.';
+    submitButton.disabled = false;
+  }
+
+  else {
+    document.querySelector('#button').innerHTML = 'GENERATE DATE';
+    document.querySelector('#easteregg').innerHTML = '';
+    document.querySelector('#blockdate').innerHTML = 'Trouble reaching the Blockcypher API, please try again later.';
     submitButton.disabled = false;
   }
 };
