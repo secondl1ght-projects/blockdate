@@ -52,6 +52,7 @@ Deployed
 
 -   Add more easter eggs.
 -   Add enter key functionality for searches.
+-   Use my own node for some API data.
 
 ## Acknowledgements
 
