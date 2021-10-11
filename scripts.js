@@ -49,7 +49,7 @@ async function getBTCPrice() {
   return new Promise(async (resolve, reject) => {
     const xhr = new XMLHttpRequest();
 
-    const url = `https://api.coindesk.com/v1/bpi/currentprice.json`;
+    const url = `http://api.coindesk.com/v1/bpi/currentprice.json`;
 
     xhr.responseType = "json";
 
