@@ -49,15 +49,15 @@ async function getBTCPrice() {
   return new Promise(async (resolve, reject) => {
     const xhr = new XMLHttpRequest();
 
-    const url = `http://api.coindesk.com/v1/bpi/currentprice.json`;
+    const url = `https://blockchain.info/ticker`;
 
     xhr.responseType = "json";
 
     xhr.onreadystatechange = () => {
       if (xhr.readyState === XMLHttpRequest.DONE) {
-        resolve(xhr.response.bpi.USD.rate_float);
+        resolve(xhr.response.USD.last);
       } else {
-        return "Trouble reaching the Coindesk API.";
+        return "Trouble reaching the Blockchain API.";
       }
     };
 
