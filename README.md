@@ -4,6 +4,8 @@ A bitcoin block date calculator, enter a block height in the past, present or fu
 
 Link to site: <https://www.blockdate.computer>
 
+![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fblockdate.computer)
+
 ## Table of Contents
 
 -   [General Info](#general-information)
