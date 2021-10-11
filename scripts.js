@@ -77,7 +77,6 @@ currentHeightInterval();
 
 async function currentBTCPrice() {
   let price = await getBTCPrice();
-  console.log(price);
   const options = { style: 'currency', currency: 'USD' };
   const numberFormat = new Intl.NumberFormat('en-US', options);
   return document.querySelector('#btcprice').innerHTML = '<span id="pricefont">' + numberFormat.format(price) + '</span>' +  ' <span id="unit">(USD)</span>';
