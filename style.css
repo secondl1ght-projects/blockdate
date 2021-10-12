@@ -1,7 +1,21 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 html {
   background-image: url(./images/background.jpg);
   position: relative;
   min-height: 100%;
+}
+
+body {
+  animation: fadeIn 1s;
 }
 
 h1, input, #blockdate, li {
@@ -127,6 +141,7 @@ li {
 
 #hints {
   display: none;
+  animation: fadeIn 1s;
 }
 
 #easteregg {
