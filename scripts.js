@@ -3,7 +3,7 @@ async function getBlockInfo(height) {
   return new Promise(async (resolve, reject) => {
     const xhr = new XMLHttpRequest();
 
-    const url = `https://api.blockcypher.com/v1/btc/main/blocks/${height}?txstart=1&limit=1`;
+    const url = `https://mempool.space/api/blocks/${height}`;
 
     xhr.responseType = "json";
 
@@ -199,7 +199,7 @@ submitButton.onclick = async function handleOnClick() {
 
   else if (blockHeight <= currentBlockHeight && blockHeight > 0) {
     const blockInfoResult = await getBlockInfo(blockHeight);
-    const blockDate = new Date(blockInfoResult.time);
+    const blockDate = new Date(blockInfoResult[0].timestamp * 1000);
     document.querySelector('#button').innerHTML = 'GENERATE DATE';
     document.querySelector('#easteregg').innerHTML = '';
     document.querySelector("#blockdate").innerHTML = blockDate;
