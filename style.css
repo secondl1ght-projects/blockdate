@@ -107,7 +107,7 @@ input:out-of-range {
 }
 
 #footeranchor {
-  height: 90vh;
+  height: 95vh;
   overflow-y: auto;
 }
 
@@ -186,7 +186,7 @@ li {
 /*media queries*/
 @media only screen and (max-width: 770px) {
   #footeranchor {
-    height: 77.5vh;
+    height: 85vh;
   }
 
   h1 {
