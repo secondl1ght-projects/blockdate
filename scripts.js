@@ -184,6 +184,14 @@ submitButton.onclick = async function handleOnClick() {
       submitButton.disabled = false;
   }
 
+  else if (blockHeight == 709632) {
+    const timestamp = new Date('2021-11-14 05:15:27 utc');
+      document.querySelector('#button').innerHTML = 'GENERATE DATE';
+      document.querySelector("#blockdate").innerHTML = timestamp;
+      document.querySelector('#easteregg').innerHTML = 'This block activates a major upgrade to the bitcoin network, Taproot. The activation went extremely smoothly much to all bitcoiners relief, after the block size wars a few years earlier during a previous upgrade. Taproot brings additional privacy to the bitcoin blockchain among other improvements. It is truly remarkable how the bitcoin network is able to improve itself and reach consensus throughout the community, among all types of users, completely decentralized.';
+      submitButton.disabled = false;
+  }
+
   else if (blockHeight == 6929999) {
     const heightDifference = blockHeight - currentBlockHeight;
     const minutesInFuture = heightDifference * 10;
